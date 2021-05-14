@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:wght@300&display=swap');
+
+
+
+input, select {
+    font-size:0.9em;
+}
+
+table {
+    margin-top:-10px;
+    margin-left:7px;
+}
+
+h4 {
+    font-size:1.1em;
+    text-decoration:none;
+    font-weight:normal;
+    color:#23A4FF;
+}
+
+a {
+    color:#23A4FF;
+}
+
+#container {
+    width: 1000px;
+    height: 600px;
+    margin:0 auto;
+    position:relative;
+}
+
+
+#left-container {
+    left:0;
+    background-position:center right;
+    border-left:1px solid #ddd;
+    
+}
+
+#right-container {
+    right:0;
+    background-position:center left;
+    border-right:1px solid #ddd;
+}
+
+#right-container h4{
+    text-indent:8px;
+}
+
+#center-container {
+    width:600px;
+    left:200px;
+    background-color:#F2F2F2;
+    color:#ccc;
+}
+
+.text {
+    margin: 7px;
+}
+
+#inner-details {
+    font-size:0.8em;
+    list-style:none;
+    margin:7px;
+}
+
+#log {
+    position:absolute;
+    top:10px;
+    font-size:1.0em;
+    font-weight:bold;
+    color:#23A4FF;
+}
+
+
+#infovis {
+    position:relative;
+    width:99%;
+    height:100%;
+    position: relative;
+    overflow:hidden;
+}
+
+/*TOOLTIPS*/
+.tip {
+    color: #111;
+    width: 139px;
+    background-color: white;
+    border:1px solid #ccc;
+    -moz-box-shadow:#555 2px 2px 8px;
+    -webkit-box-shadow:#555 2px 2px 8px;
+    -o-box-shadow:#555 2px 2px 8px;
+    box-shadow:#555 2px 2px 8px;
+    opacity:0.9;
+    filter:alpha(opacity=90);
+    font-size:10px;
+    font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
+    padding:7px;
+}
+
+.pageText{
+     font-size: 20px; 
+     text-align: right; 
+     padding-right: 10px; 
+     color: #2d2d61; 
+     width: 80%; 
+     margin-left: 15%;
+}
+
+.reveal{
+    position: relative;
+    width: 40%; 
+    display: block; 
+    height: 5%;
+    margin-top: 180px; 
+    margin-left: 55%;
+}
+
+
+.logo-image{
+    height: 80%;
+    align-content: left;
+
+}
+
+.img-fluid{
+    height: inherit;
+    width: inherit;
+    margin-left: 3vw;
+    margin-top: 1%;
+    margin-right: 90vw;
+
+
+}
+
+.second{
+    display: none;
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Bridging Innovation Gap</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/animate.min.css" rel="stylesheet"> 
+<link href="css/lightbox.css" rel="stylesheet"> 
+<link href="css/main.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+<link type="text/css" href="css/base.css" rel="stylesheet" />
+<link type="text/css" href="css/Spacetree.css" rel="stylesheet" />
+<!-- CSS Files -->
+<link type="text/css" href="css/base.css" rel="stylesheet" />
+<link type="text/css" href="css/Spacetree.css" rel="stylesheet" />
+<link rel="shortcut icon" href="images/ico/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Candal&display=swap" rel="stylesheet">
+<!--[if IE]><script language="javascript" type="text/javascript" src="../../Extras/excanvas.js"></script><![endif]-->
+
+<!-- JIT Library File -->
+<script language="javascript" type="text/javascript" src="js/jt/jit.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+<!-- Example File -->
+<script language="javascript" type="text/javascript" src="js/jt/example1.js"></script>
+</head>
+
+<body style="overflow-x: hidden;">
+	<header id="header">      
+        <div class="navbar" role="banner" style="border: 1px solid #2d2d61;">
+            <div class="container" style="background-color: #2d2d61;" >
+                <div class="navbar-header" >
+                    <a class="navbar-brand" href="index.html">
+                    	<h1><img src="images/logouf.png" style="height: 40px;" alt="logo"></h1>
+                    </a>                   
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--/#header-->
+    <section id="home-slider" style="margin-top: -2em;">
+        <div class="container">
+            <div class="row">
+                <div class="main-slider">
+                    <div class="slide-text">
+                        <h1 style="font-family: 'Candal', sans-serif; font-size: 4em;color: #2d2d61;"> A Framework for Net Zero Actions by Places</h1>
+                    </div>
+                    <!-- <img src="images/home/slider/hill.png" class="slider-hill" alt="slider image"> -->
+                    <img src="images/home/slider/house.png" class="slider-house" alt="slider image">
+                    <img src="images/home/slider/sun.png" class="slider-sun" alt="slider image">
+                    <img src="images/home/slider/birds1.png" class="slider-birds1" alt="slider image">
+                    <img src="images/home/slider/birds2.png" class="slider-birds2" alt="slider image">
+                </div>
+            </div>
+        </div>
+        <div class="preloader"><i class="fa fa-sun-o fa-spin"></i></div>
+    </section>
+    <!--/#home-slider-->
+
+    <section id="services" style="padding: 7em; padding-bottom: 0; padding-top: 4.5em;">
+        <div class="container" style="padding: 0;font-size: 1.6em; line-height: 1.4em;">
+            <p class="slider-house">This framework breaks down the big challenge of getting to net zero into manageable actions which can be taken by local authorities. 
+                It helps Innovate UK understand the range of things that places can do to get to net zero. It gives different levels of focus, from big strategic challenges through to smaller, tactical challenges. It then lists solutions to those challenges. 
+                Each solution has a banding:
+            </p>
+                <ul class="slider-house" style="list-style: square outside none; margin-bottom: 1em;">
+                    <li>An <span style="font-weight: bold;">established solution </span> has a mature supply or established technology, and is widely understood as relevant to net zero goals.</li> 
+                    <li>An <span style="font-weight: bold;">emerging solution</span> is where the market is less developed, but the solution will in time be relevant to net zero.</li> 
+                    <li>An <span style="font-weight: bold;">adapting solution</span> is where supply is mature, but the relevance of a solution to net zero is less widely understood. </li>    
+                </ul>
+            <div style="align-items:flex-end; text-align: right;">
+                <a onclick="show(); init();" class="scrolldown" style="font-size: 1em; line-height: 1em; font-weight: bold; color: black; text-decoration: underline; cursor: pointer;">Explore the Framework ---></a>
+            </div>
+        </div>
+    </section>
+    <!--/#services-->
+    <section id="framework" style="height: 93vh; display: none;">
+    <div id="container" style="width: 100vw; height: 90vh; margin-top: 10vh; position: relative;">
+
+        <div id="right-container" style="position: fixed; z-index: 3; height: 90vh; flex: 30%; background-color: red;">
+
+        <table id="orientation" style="margin-left: 75%;">
+            <tr>
+                <td>
+                    <label for="r-left">Horizontally </label>
+                </td>
+                <td>
+                    <input type="radio" id="r-left" name="orientation" checked="checked" value="left" />
+                </td>
+            </tr>
+            <tr>
+                 <td>
+                    <label for="r-top">Vertically </label>
+                 </td>
+                 <td>
+                    <input type="radio" id="r-top" name="orientation"  value="top" />
+                 </td>
+            </tr>
+            <tr>
+                 <td>
+                    <label for="r-bottom" style="visibility: hidden;">Bottom </label>
+                  </td>
+                  <td>
+                    <input type="radio" id="r-bottom" style="visibility: hidden;" name="orientation" value="bottom" />
+                  </td>
+            </tr>
+            <tr>
+                  <td>
+                    <label for="r-right" style="visibility: hidden;">Right </label>
+                  </td> 
+                  <td> 
+                   <input type="radio" id="r-right" name="orientation" value="right" style="visibility: hidden;" />
+                  </td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <td>
+                    <label for="s-normal">Normal </label>
+                </td>
+                <td>
+                    <input type="radio" id="s-normal" name="selection" checked="checked" value="normal" />
+                </td>
+            </tr>
+            <tr>
+                 <td>
+                    <label for="s-root">Set as Root </label>
+                 </td>
+                 <td>
+                    <input type="radio" id="s-root" name="selection" value="root" />
+                 </td>
+            </tr>
+        </table>
+
+        </div>
+
+        <div id="center-container" style="height: 100%; width: 100%;">
+            <div id="infovis" style="width: 97%; height: 100%;"></div>    
+        </div>
+        <div id="log" style="color:#f2f2f2;"></div>
+        </div>
+    </section>
+    <footer id="footer" style="margin-bottom: 0; display: none;">
+        <div class="container">
+                <div class="col-sm-12">
+                    <div class="copyright-text text-center" style="margin-top: 0em;">
+                        <p style="font-weight: bold; color:#2d2d61; margin-top: 0; ">For more information about the framework visit <span><a href="https://urbanforesight.org/">Urban Foresight</a></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/#footer-->
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/lightbox.min.js"></script>
+        <script type="text/javascript" src="js/wow.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>   
+        
+</body>
+<script>
+    function show(){
+        document.getElementById('framework').style.display = "block";
+        document.getElementById('footer').style.display = "block";
+        window.scrollBy(0, 1100); 
+    }
+</script>
+</html>
